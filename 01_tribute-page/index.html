@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="absolute h-44 w-full"><video class="h-44 w-full object-cover" autoplay loop muted src="resources/india-flag-video.mp4"></video></div>
-        <div class="z-10 border-b-2 h-96 flex flex-col items-center justify-center space-y-2">
-            <div class="z-50"><img class="border-4 border-white rounded h-36" src="resources/ratan-tata.jpeg" alt="ratan-tata"></div>
-            <div class="z-30 text-4xl text-amber-600">Ratan Naval Tata</div>
-            <div class="z-20 text-black font-serif text-2xl">1937 - 2024</div>
+        <div class="absolute h-44 w-full">
+            <video class="h-44 w-full object-cover" autoplay loop muted src="resources/india-flag-video.mp4"></video>
         </div>
+        <div class="z-10 border-b-2 h-96 flex flex-col items-center justify-center space-y-6">
+            <div class="z-50 fixed top-24">
+                <img class="border-4 border-white rounded h-36" src="resources/ratan-tata.jpeg" alt="ratan-tata">
+            </div>
+            <div class="fixed flex flex-col items-center justify-center space-y-4 top-60">
+                <div class="text-4xl text-[#E38A1C]">Ratan Naval Tata</div>
+                <div class="text-[#1C75E3] font-serif text-2xl">1937 - 2024</div>
+            </div>
+        </div>
+        
     </header>
 </body>
 </html>
