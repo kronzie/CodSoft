@@ -10,30 +10,48 @@
 </head>
 <body> 
     <!-- body -->
-    <div class="relative">
-        <img class="" src="resources/image-header.jpg" alt="header">
+    <div class="relative flex justify-center">
+        <img class="mobile sm:hidden" src="resources/image-header-mobile.jpg" alt="header">
+        <img class="hidden sm:block" src="resources/image-header-desktop.jpg" alt="header">
+
         <!-- nav bar -->
-        <div class="absolute w-full h-16 top-0 flex justify-between items-center px-[6vw]">
-            <img class="h-[7vw]" src="resources/logo.svg" alt="logo">
-            <ul class="hidden sm:block">
+        <div class="absolute w-full h-16 top-0 flex justify-between items-center px-[6vw] sm:h-24">
+            <img class="h-[7vw] sm:h-7" src="resources/logo.svg" alt="logo">
+            <ul class="hidden sm:flex gap-6 font-['Barlow'] items-center text-lg text-[#f6ffff]">
                 <li>About</li>
                 <li>Services</li>
                 <li>Projects</li>
+                <button class="hidden sm:block font-['Fraunces'] font-bold bg-[#f6ffff] px-4 py-3 rounded-full text-base text-[#353640]">CONTACT</button>
             </ul>   
-            <button class="hidden sm:block">CONTACT</button>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 text-[#f6ffff]">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 text-[#f6ffff] sm:hidden">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>              
         </div>
-        
-        <div class="absolute top-[25%] flex items-center justify-center">
-            <p class="text-[#f6ffff] text-[13vw] font-['Fraunces'] font-black leading-[14vw] text-center">WE ARE CREATIVES</p>
-            <div class="absolute top-[135%]">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-[38vw] text-[#f6ffff]">
+        <!-- after nav-bar -->
+        <div class="absolute top-[25%] flex items-center justify-center sm:top-[20%]">
+            <p class="text-[#f6ffff] tracking-widest text-[13vw] font-['Fraunces'] font-black leading-[14vw] text-center sm:text-[4vw] sm:tracking-widest sm:relative">WE ARE CREATIVES</p>
+            <div class="absolute top-[135%] sm:top-[15vw]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-[38vw] text-[#f6ffff] sm:size-[10vw]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
                 </svg>
             </div>
         </div>
     </div>
+    <!-- content along till orange wala image done -->
+    <!-- next content -->
+    <div class="bg-[#f6ffff] sm:flex sm:flex-row-reverse sm:">
+        <!-- Egg content -->
+        <div class="egg-m sm:flex-1">
+            <img src="resources/image-transform-mobile.jpg" alt="egg">
+        </div>
+
+        <!-- Egg info -->
+        <div class=" egg-info-m-d sm:flex-1 flex flex-col gap-[6vw] sm:size-0 sm:gap-[2vw] items-center sm:items-start">
+            <p class="pt-[14vw] px-[16vw] text-center text-[#232f3e] font-black text-[8vw] font-['Fraunces'] sm:pt-[11vw] sm:px-[8vw] sm:leading-none sm:text-[3vw] sm:text-left">Transform your brand</p>
+            <p class="pb-[3vw] px-[6vw] font-medium text-[4vw] text-[#838293] text-center font-['Barlow'] sm:pb-0 sm:px-[8vw] sm:text-left sm:text-[1.5vw]">Were are full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most  of the marketing for you.</p>
+            <p class="l-m pb-[14vw] font-['Fraunces'] font-bold text-[4vw] text-[#232f3e] sm:pb-0 sm:px-[8vw] sm:text-[1.5vw] sm:text-left sm:">LEARN MORE</p>
+        </div>
+    </div>
+    <!-- next content -->
 </body>
 </html>
