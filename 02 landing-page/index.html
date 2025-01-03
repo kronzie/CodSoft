@@ -16,12 +16,12 @@
 
         <!-- nav bar -->
         <div class="absolute w-full h-16 top-0 flex justify-between items-center px-[6vw] sm:h-24">
-            <img class="h-[7vw] sm:h-7" src="resources/logo.svg" alt="logo">
-            <ul class="hidden sm:flex gap-6 font-['Barlow'] items-center text-lg text-[#f6ffff]">
+            <img class="h-[7vw] sm:h-7 md:h-[2.5vw]" src="resources/logo.svg" alt="logo">
+            <ul class="hidden sm:flex gap-6 font-['Barlow'] items-center text-lg text-[#f6ffff] md:text-[1.5vw]">
                 <li>About</li>
                 <li>Services</li>
                 <li>Projects</li>
-                <button class="hidden sm:block font-['Fraunces'] font-bold bg-[#f6ffff] px-4 py-3 rounded-full text-base text-[#353640]">CONTACT</button>
+                <button class="hidden sm:block font-['Fraunces'] font-bold bg-[#f6ffff] px-4 py-3 rounded-full sm:text-[1vw] text-[#353640]">CONTACT</button>
             </ul>   
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 text-[#f6ffff] sm:hidden">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -47,7 +47,7 @@
         </div>
         <div class="hidden sm:block sm:flex-1">
             <!-- image desktop -->
-            <img src="resources/image-transform-desktop.jpg" alt="egg">
+            <img class="md:h-[45vw]" src="resources/image-transform-desktop.jpg" alt="egg">
         </div>
 
         <!-- Egg info -->
@@ -58,11 +58,11 @@
         </div>
     </div>
     <!-- next content -->
-     <div class="bg-[#f6ffff] sm:flex sm:flex-row">
+    <div class="relative bg-[#f6ffff] sm:flex sm:flex-row">
         <!-- image -->
         <div class="hidden sm:block sm:flex-1">
             <!-- image desktop-->
-            <img src="resources/image-stand-out-desktop.jpg" alt="standout">
+            <img class="md:h-[45vw]" src="resources/image-stand-out-desktop.jpg" alt="standout">
         </div>
         <div class="sm:hidden">
             <!-- image mobile-->
@@ -76,11 +76,11 @@
         </div>
     </div>
     <!-- cherry and orangecontent -->
-    <div class="sm:flex sm:flex-row">
+    <div class="relative sm:flex sm:flex-row">
         <!-- cherry content -->
         <div class="relative">
             <!-- image desktop -->
-            <img  class="hidden sm:block" src="resources/image-graphic-design-desktop.jpg" alt="cherry">
+            <img  class="hidden sm:block md:h-[45vw]" src="resources/image-graphic-design-desktop.jpg" alt="cherry">
             <!-- image mobile -->
             <img class="sm:hidden" src="resources/image-graphic-design-mobile.jpg" alt="cherry">
             <div class="absolute bottom-[16vw] space-y-[5vw] sm:bottom-[4vw] sm:space-y-[2vw]">
@@ -92,7 +92,7 @@
         <!-- orange content -->
         <div class="relative">
             <!-- image desktop -->
-            <img class="hidden sm:block" src="resources/image-photography-desktop.jpg" alt="orange">
+            <img class="hidden sm:block md:h-[45vw]" src="resources/image-photography-desktop.jpg" alt="orange">
             <!-- image mobile -->
             <img class="sm:hidden" src="resources/image-photography-mobile.jpg" alt="orange">
             <div class="absolute bottom-[16vw] space-y-[5vw] sm:bottom-[4vw] sm:space-y-[2vw]">
@@ -101,6 +101,48 @@
                 <p class="text-[5vw] text-[#1d536c] font-['Barlow'] text-center font-semibold px-[10vw] sm:text-[1.2vw] sm:font-medium sm:px-[12vw]">Great designs makes you memorable. We deliver artwork that underscores your brand message and captures potential clients.</p>
             </div>
         </div>
-     </div>
+    </div>
+    <!-- Client Testimonial -->
+    <div>
+        <p class="pt-[18vw] pb-[13vw] text-[#a8abac] text-[5vw] tracking-[1vw] font-black font-['Fraunces'] text-center sm:pt-[12vw] sm:pb-[5vw] sm:text-[2.3vw]">CLIENT TESTIMONIALS</p>
+        <div class="flex flex-col sm:flex-row">
+            <div class="flex flex-col items-center">
+                <img class="h-[25vw] rounded-full sm:h-[6vw]" src="resources/image-emily.jpg" alt="">
+                <p class="pt-[10vw] pb-[8vw] px-[5vw] text-[5vw] font-semibold text-[#5e626d] font-['Barlow'] text-center sm:pt-[2vw] sm:pb-[2vw] sm:px-[3vw] sm:text-[1.5vw]">We put out trust in sunnyside and they delivered, making sure out needs were met and deadlines where always hit.</p>
+                <p class="pb-[2vw] font-['Fraunces'] text-[6vw] font-black text-[#273240] sm:pb-[0] sm:text-[2vw]">Emily R.</p>
+                <p class="pb-[10vw] font-['Barlow'] text-[#a9a9a8] text-[4vw] font-semibold sm:pb-[10vw] sm:text-[1.6vw]">Marketing Director</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="h-[25vw] rounded-full sm:h-[6vw]" src="resources/image-thomas.jpg" alt="">
+                <p class="pt-[10vw] pb-[8vw] px-[5vw] text-[5vw] font-semibold text-[#5e626d] font-['Barlow'] text-center sm:pt-[2vw] sm:pb-[2vw] sm:px-[3vw] sm:text-[1.5vw]">Sunnyside's enthusiasm coupled with their keen interest in out brand's success made it a satisfying an enjoyable experience.</p>
+                <p class="pb-[2vw] font-['Fraunces'] text-[6vw] font-black text-[#273240] sm:pb-[0] sm:text-[2vw]">Thomas S.</p>
+                <p class="pb-[10vw] font-['Barlow'] text-[#a9a9a8] text-[4vw] font-semibold sm:pb-[10vw] sm:text-[1.6vw]">Chief Operating Officer</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="h-[25vw] rounded-full sm:h-[6vw]" src="resources/image-jennie.jpg" alt="">
+                <p class="pt-[10vw] pb-[8vw] px-[5vw] text-[5vw] font-semibold text-[#5e626d] font-['Barlow'] text-center sm:pt-[2vw] sm:pb-[2vw] sm:px-[3vw] sm:text-[1.5vw]">We put out trust in sunnyside and they delivered, making sure out needs were met and deadlines where always hit.</p>
+                <p class="pb-[2vw] font-['Fraunces'] text-[6vw] font-black text-[#273240] sm:pb-[0] sm:text-[2vw]">Jennie F.</p>
+                <p class="pb-[20vw] font-['Barlow'] text-[#a9a9a8] text-[4vw] font-semibold sm:pb-[10vw] sm:text-[1.6vw]">Business Owner</p>
+            </div>
+        </div>
+    </div>
+    <!-- gallery -->
+    <div class="sm:hidden flex flex-row">
+        <!-- mobile -->
+        <img class="flex-1 h-[50vw]" src="resources/image-gallery-milkbottles-mobile.jpg" alt="">
+        <img class="flex-1 h-[50vw]" src="resources/image-gallery-orange-mobile.jpg" alt=""> 
+    </div>
+    <div class="sm:hidden flex flex-row">
+        <!-- mobile -->
+        <img class="flex-1 h-[50vw]" src="resources/image-gallery-cone-mobile.jpg" alt="">
+        <img class="flex-1 h-[50vw]" src="resources/image-gallery-sugar-cubes-mobile.jpg" alt=""> 
+    </div>
+    <div class="hidden sm:flex sm:flex-row sm:flex-wrap sm:top-[10vw]">
+        <!-- desktop -->
+        <div class="flex-1"><img src="resources/image-gallery-milk-bottle-desktop.jpg" alt="milk-bottles"></div>
+        <div class="flex-1"><img src="resources/image-gallery-orange-smart-desktop.jpg" alt="orange-mobile"></div>
+        <div class="flex-1"><img src="resources/image-gallery-cone-desktop.jpg" alt="cone"></div>
+        <div class="flex-1"><img src="resources/image-gallery-sugar-cubes-desktop.jpg" alt="sugar-cubes"></div>
+    </div>
 </body>
 </html>
