@@ -4,21 +4,3 @@
 * {
     box-sizing: border-box;
 }
-
-.l-m {
-    position: relative;
-}
-
-.l-m::after {
-    z-index: -10;
-    position: absolute;
-    content: '';
-    bottom: 2vw;
-    top: 2vw;
-    right: vw;
-    left: vw;
-    height: 3vw;
-    border-radius: 15vw; 
-    background-color: #fff0bc;
-
-}
