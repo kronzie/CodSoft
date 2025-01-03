@@ -78,25 +78,23 @@
     <!-- cherry and orangecontent -->
     <div class="sm:flex sm:flex-row">
         <!-- cherry content -->
-        <div class="hidden sm:block">
+        <div class="relative">
             <!-- image desktop -->
-            <img src="resources/image-graphic-design-desktop.jpg" alt="cherry">
-        </div>
-        <div class="sm:hidden sm:flex-1">
+            <img  class="hidden sm:block" src="resources/image-graphic-design-desktop.jpg" alt="cherry">
             <!-- image mobile -->
-            <img src="resources/image-graphic-design-mobile.jpg" alt="cherry">
-        </div>
-        <div>
-            <!-- cherry text -->
-            <p></p>
-            <p></p>
+            <img class="sm:hidden" src="resources/image-graphic-design-mobile.jpg" alt="cherry">
+            <div class="absolute bottom-[16vw] space-y-[5vw] sm:bottom-[4vw] sm:space-y-[2vw]">
+                <!-- cherry text -->
+                <p class="text-[8vw] font-['Fraunces'] font-black text-[#23554a] text-center sm:text-[2.5vw]">Graphic Design</p>
+                <p class="text-[5vw] text-[#23554a] font-['Barlow'] text-center font-semibold px-[10vw] sm:text-[1.2vw] sm:font-medium sm:px-[12vw]">Great designs makes you memorable. We deliver artwork that underscores your brand message and captures potential clients.</p>
+            </div>
         </div>
         <!-- orange content -->
-        <div class="">
+        <div class="relative">
             <!-- image desktop -->
             <img class="hidden sm:block" src="resources/image-photography-desktop.jpg" alt="orange">
             <!-- image mobile -->
-            <img class="" src="resources/image-photography-mobile.jpg" alt="orange">
+            <img class="sm:hidden" src="resources/image-photography-mobile.jpg" alt="orange">
             <div class="absolute">
                 <!-- orange text -->
                 <p></p>
