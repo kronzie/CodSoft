@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="chota-body h-screen flex flex-col justify-center items-center bg-[#3A4764]">
+        <div class="self-start mx-[10vw] font-['League_Spartan'] font-semibold text-[8vw] text-white sm:text-[4vw] sm:mx-[20vw]">
+            <p class="">calc</p>
+        </div>
+        <div class="calculator sm:w-[60vw] sm:h-[60vh]">
+            <div class="display-container">
+                <input class="bg-[#182034] w-[85vw] sm:w-[60vw]" type="text">
+            </div>
+            <div class="buttons-container bg-[#232C43] h-[75vh] sm:h-[60vh]">
+                <input type="button" value="7">
+                <input type="button" value="8">
+                <input type="button" value="9">
+                <input type="button" value="DEL">
+                <input type="button" value="4">
+                <input type="button" value="5">
+                <input type="button" value="6">
+                <input type="button" value="+">
+                <input type="button" value="1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="-">
+                <input type="button" value=".">
+                <input type="button" value="0">
+                <input type="button" value="/">
+                <input type="button" value="*">
+                <input type="button" value="RESET">
+                <input type="button" value="=">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
