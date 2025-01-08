@@ -1,1 +1,1 @@
-https://creator-agency-landing-page.netlify.app/
+https://js-calculator-ui.netlify.app/
