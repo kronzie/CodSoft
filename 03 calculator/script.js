@@ -19,7 +19,77 @@ window.onload = function() {
     keyRESET = document.querySelector('.keyRESET');
     keyEQUAL = document.querySelector('.key-equal');
     
-    display.value = "3";
+    key1.addEventListener('click', () => {
+        display.value += '1';
+    })
+
+    key2.addEventListener('click', () => {
+        display.value += '2';
+    })
+
+    key3.addEventListener('click', () => {
+        display.value += '3';
+    })
+    
+    key4.addEventListener('click', () => {
+        display.value += '4';
+    })
+
+    key5.addEventListener('click', () => {
+        display.value += '5';
+    })
+
+    key6.addEventListener('click', () => {
+        display.value += '6';
+    })
+
+    key7.addEventListener('click', () => {
+        display.value += '7';
+    })
+
+    key8.addEventListener('click', () => {
+        display.value += '8';
+    })
+
+    key9.addEventListener('click', () => {
+        display.value += '9';
+    })
+
+    key0.addEventListener('click', () => {
+        display.value += '0';
+    })
+
+    keyPLUS.addEventListener('click', () => {
+        display.value += '+';
+    })
+
+    keyMINUS.addEventListener('click', () => {
+        display.value += '-';
+    })
+
+    keyMULTIPLY.addEventListener('click', () => {
+        display.value += '*';
+    })
+
+    keyDIVIDE.addEventListener('click', () => {
+        display.value += '/';
+    })
+
+    keyDOT.addEventListener('click', () => {
+        display.value += '.';
+    })
+
+    keyDEL.addEventListener('click', () => {
+        display.value = display.value.slice(0, -1);
+    })
+
+    keyRESET.addEventListener('click', () => {
+        display.value = '';
+    })
+
+    keyEQUAL.addEventListener('click', () => {
+        display.value = eval(display.value);
+    })
 }
 
 
