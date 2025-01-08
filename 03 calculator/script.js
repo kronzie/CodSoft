@@ -80,7 +80,12 @@ window.onload = function() {
     })
 
     keyDEL.addEventListener('click', () => {
-        display.value = display.value.slice(0, -1);
+        if(display.value == 'error'){
+            display.value = '';
+        }
+        else {
+            display.value = display.value.slice(0, -1);
+        }
     })
 
     keyRESET.addEventListener('click', () => {
@@ -89,8 +94,12 @@ window.onload = function() {
 
     keyEQUAL.addEventListener('click', () => {
         display.value = eval(display.value);
+
+        if(display.value > '9999999999'){
+            display.value = 'error';
+        }
     })
 }
 
-
+// DONE
 
