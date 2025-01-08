@@ -10,8 +10,19 @@ input[type="button"] {
 
 input[type="button"]:active {
     position: relative;
-    top: 0.8vw;
+    top: 2vw;
     box-shadow: none;
 }
 
+@media (min-width: 640px) { 
+    input[type="button"] {
+        position: relative;
+    }
+    
+    input[type="button"]:active {
+        position: relative;
+        top: 0.8vw;
+        box-shadow: none;
+    }
+}
 /* DONE */
